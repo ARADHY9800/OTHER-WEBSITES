@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Smooth animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #444;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 50px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            margin: 10px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+
+        .portfolio-item p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-btn:hover {
+            background-color: #555;
+        }
+
+        /* Other Websites Section */
+        .other-websites {
+            padding: 50px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .other-websites h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .other-websites a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .other-websites a:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="https://aradhy9800.github.io/CREATORs-PORTFOLIO/">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header fade-in" id="home">
+        <h1>WELCOME TO OUR ALL OFFICIAL WEBSITES</h1>
+        <p>THIS PAGE INCLUDE OUR EVERY OFFCIAL WEBSITE.</p>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio fade-in" id="portfolio">
+        <h2>OFFICIAL WEBSITES</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/lBG2veM_d.webp?maxwidth=128&shape=square" alt="Project 1">
+                <h3>WEBSITE 1</h3>
+                <p>SKULL-CHUNKS.</p>
+                <a href="https://aradhy9800.github.io/SKULL-CHUNKS/" class="project-btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/RG7qzVQ_d.webp?maxwidth=128&shape=square" alt="Project 2">
+                <h3>WEBSITE 2</h3>
+                <p>SKULL-CHUNKS-WEB-SERVICES.</p>
+                <a href="https://aradhy9800.github.io/SKULL-CHUNKS-WEBSITE-SERVICES/" class="project-btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.imgur.com/MZQxG1E.png" alt="Project 3">
+                <h3>WEBSITE 3</h3>
+                <p>CREATORs-PORTFOLIO.</p>
+                <a href="https://aradhy9800.github.io/CREATORs-PORTFOLIO/" class="project-btn">View Project</a>
+            </div>    
+          <div class="portfolio-item">
+                <img src="https://i.imgur.com/R7WjQpT.png" alt="Project 3">
+                <h3>WEBSITE 4</h3>
+                <p>OTHER-WEBSITE</p>
+                <a href="#" class="project-btn">View Project</a>
+            </div> 
